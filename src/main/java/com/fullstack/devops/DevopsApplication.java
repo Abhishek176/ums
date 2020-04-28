@@ -1,4 +1,3 @@
-  
 package com.fullstack.devops;
 
 import org.springframework.boot.SpringApplication;

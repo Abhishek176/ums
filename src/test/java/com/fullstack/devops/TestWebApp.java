@@ -32,5 +32,10 @@ public class TestWebApp extends DevopsApplicationTests {
 		.andExpect(view().name("list-users"));
 	}
 	
-	
+	@Test
+	public void testAddUser() throws Exception {
+		mockMvc.perform(get("/api/user/add"))
+		.andExpect(status().isOk())
+		.andExpect(view().name("add-user"));
+	}
 }
